@@ -44,7 +44,7 @@ Git • GitHub • VS Code • Canva • Adobe Tools (Basic)
 
 | Platform  | Link                                                    |
 | --------- | ------------------------------------------------------- |
-| Email     | [your.email@example.com](mailto:your.email@example.com) |
+| Email     | gouriparashar07@gmail.com                               |
 | Portfolio | Coming Soon                                             |
 | GitHub    | https://github.com/yourusername                         |
 
