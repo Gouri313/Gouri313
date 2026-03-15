@@ -46,7 +46,7 @@ Git • GitHub • VS Code • Canva • Adobe Tools (Basic)
 | --------- | ------------------------------------------------------- |
 | Email     | gouriparashar07@gmail.com                               |
 | Portfolio | Coming Soon                                             |
-| GitHub    | https://github.com/yourusername                         |
+| GitHub    | https://github.com/Gouri313                              |
 
 ---
 
@@ -61,7 +61,7 @@ LinkedIn • Instagram • GitHub
 | Project                       | Description                                       | Tech Stack          |
 | ----------------------------- | ------------------------------------------------- | ------------------- |
 | portfolio website             |    Html ,Css, js (basics)                         |  vs code            |
-| Creative Poster Designs       | Collection of graphic design and editing projects | Canva / Adobe Tools |
+| Creative Poster Designs       | Collection of graphic design and editing projects | Canva / Adobe tools |
 
 ➡️ View all projects on my GitHub profile
 
