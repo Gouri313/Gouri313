@@ -16,7 +16,7 @@
 
 ## 🌱 Currently Learning
 
-Java • Web Development • Graphic Design • Creative Editing
+ Web Development • Graphic Design • Creative Editing
 
 ---
 
