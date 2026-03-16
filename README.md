@@ -6,10 +6,10 @@
 
 ## 🎓 About Me
 
-🏫 Studying **B.Tech in Computer Science Engineering** in India
-🎯 Interested in **Programming, Graphic Design & Creative Editing**
-💼 Currently working on **learning Java and improving my design skills**
-🚀 Passionate about **technology, coding, editing and graphics design**
+🏫 Studying **B.Tech in Computer Science Engineering** in India.
+🎯 Interested in **Programming, Graphic Design & Creative Editing**.
+💼 Currently working on **learning Java and improving my design skills**.
+🚀 Passionate about **technology, coding, editing and graphics design**.
 🌍 Based in **India**
 
 ---
