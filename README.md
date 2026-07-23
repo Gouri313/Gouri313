@@ -45,7 +45,7 @@ Git • GitHub • VS Code • Canva • Adobe Tools (Basic)
 | Platform  | Link                                                    |
 | --------- | ------------------------------------------------------- |
 | Email     | gouriparashar07@gmail.com                               |
-| Portfolio | Coming Soon                                             |
+| Portfolio | https://gouri313.vercel.app                                           |
 | GitHub    | https://github.com/Gouri313                              |
 
 ---
@@ -63,7 +63,7 @@ LinkedIn • Instagram • GitHub
 | portfolio website             |    Html ,Css, js (basics)                         |  vs code            |
 | Creative Poster Designs       | Collection of graphic design and editing projects | Canva / Adobe tools |
 
-➡️ View all projects on my GitHub profile
+➡️ View all projects on my GitHub profile - https://github.com/Gouri313
 
 ---
 
