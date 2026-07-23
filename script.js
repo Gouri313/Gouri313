@@ -1,159 +1,37 @@
-// =========================
-// AOS Animation
-// =========================
-AOS.init({
-    duration: 1000,
-    once: true
+// Page loading animation
+document.addEventListener("DOMContentLoaded", () => {
+
+    const sections = document.querySelectorAll("section");
+
+    sections.forEach((section, index) => {
+
+        section.style.opacity = "0";
+        section.style.transform = "translateY(30px)";
+
+        setTimeout(() => {
+
+            section.style.transition = "0.8s ease";
+            section.style.opacity = "1";
+            section.style.transform = "translateY(0)";
+
+        }, index * 200);
+
+    });
+
 });
 
-// =========================
-// Typing Effect
-// =========================
-const words = [
-    "B.Tech CSE Student",
-    "AI Enthusiast",
-    "DSA in C++",
-    "Graphic Designer",
-    "Creative Editor"
-];
 
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
+// Current Year in Footer (optional)
+const footer = document.querySelector("footer");
 
-const typing = document.getElementById("typing");
+if(footer){
 
-function typeEffect() {
+    const year = new Date().getFullYear();
 
-    const currentWord = words[wordIndex];
+    const small = document.createElement("p");
 
-    if (!isDeleting) {
+    small.innerHTML = `© ${year} Gouri Parashar | All Rights Reserved`;
 
-        typing.textContent =
-            currentWord.substring(0, charIndex++);
-
-        if (charIndex > currentWord.length) {
-
-            isDeleting = true;
-
-            setTimeout(typeEffect, 1200);
-
-            return;
-
-        }
-
-    } else {
-
-        typing.textContent =
-            currentWord.substring(0, charIndex--);
-
-        if (charIndex < 0) {
-
-            isDeleting = false;
-
-            wordIndex++;
-
-            if (wordIndex >= words.length)
-                wordIndex = 0;
-
-        }
-
-    }
-
-    setTimeout(typeEffect, isDeleting ? 60 : 120);
+    footer.appendChild(small);
 
 }
-
-typeEffect();
-
-
-// =========================
-// Scroll To Top
-// =========================
-
-const topBtn = document.getElementById("scrollTop");
-
-window.addEventListener("scroll", () => {
-
-    if (window.scrollY > 400) {
-
-        topBtn.style.display = "block";
-
-    } else {
-
-        topBtn.style.display = "none";
-
-    }
-
-});
-
-topBtn.onclick = () => {
-
-    window.scrollTo({
-
-        top: 0,
-
-        behavior: "smooth"
-
-    });
-
-};
-
-
-// =========================
-// Dark Mode
-// =========================
-
-const themeBtn = document.getElementById("theme-toggle");
-
-themeBtn.onclick = () => {
-
-    document.body.classList.toggle("light-mode");
-
-};
-
-
-// =========================
-// Mobile Menu
-// =========================
-
-const menuBtn = document.querySelector(".menu-btn");
-const navLinks = document.querySelector(".nav-links");
-
-menuBtn.onclick = () => {
-
-    navLinks.classList.toggle("active");
-
-};
-
-
-// =========================
-// Active Navbar Links
-// =========================
-
-const sections = document.querySelectorAll("section");
-const navItems = document.querySelectorAll(".nav-links a");
-
-window.addEventListener("scroll", () => {
-
-    let current = "";
-
-    sections.forEach(section => {
-
-        const top = section.offsetTop - 120;
-
-        if (scrollY >= top)
-            current = section.id;
-
-    });
-
-    navItems.forEach(link => {
-
-        link.classList.remove("active");
-
-        if (link.getAttribute("href") == "#" + current)
-            link.classList.add("active");
-
-    });
-
-});
