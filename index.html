@@ -5,326 +5,254 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gouri Parashar | Portfolio</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-        }
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        body{
-            background:#0f172a;
-            color:#f8fafc;
-            line-height:1.7;
-        }
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-        .container{
-            width:90%;
-            max-width:1100px;
-            margin:auto;
-            padding:40px 0;
-        }
+    <!-- AOS Animation -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
 
-        section{
-            background:#1e293b;
-            margin:25px 0;
-            padding:25px;
-            border-radius:15px;
-            box-shadow:0 5px 20px rgba(0,0,0,.3);
-        }
-
-        h1{
-            font-size:42px;
-            color:#38bdf8;
-        }
-
-        h2{
-            color:#60a5fa;
-            margin-bottom:15px;
-            border-bottom:2px solid #38bdf8;
-            display:inline-block;
-            padding-bottom:5px;
-        }
-
-        p{
-            margin:8px 0;
-        }
-
-        ul{
-            padding-left:25px;
-        }
-
-        li{
-            margin:8px 0;
-        }
-
-        table{
-            width:100%;
-            border-collapse:collapse;
-            margin-top:15px;
-        }
-
-        table,th,td{
-            border:1px solid #334155;
-        }
-
-        th{
-            background:#2563eb;
-            color:white;
-            padding:12px;
-        }
-
-        td{
-            padding:12px;
-            background:#0f172a;
-        }
-
-        a{
-            color:#38bdf8;
-            text-decoration:none;
-        }
-
-        a:hover{
-            text-decoration:underline;
-        }
-
-        .skills{
-            display:flex;
-            flex-wrap:wrap;
-            gap:10px;
-            margin-top:15px;
-        }
-
-        .skill{
-            background:#2563eb;
-            padding:10px 18px;
-            border-radius:30px;
-        }
-
-        footer{
-            text-align:center;
-            padding:30px;
-            color:#94a3b8;
-        }
-
-        @media(max-width:768px){
-            h1{
-                font-size:32px;
-            }
-
-            table{
-                display:block;
-                overflow-x:auto;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+<!-- ================= NAVBAR ================= -->
 
-    <!-- Header -->
-    <section>
-        <h1>👋 Hey! I'm Gouri Parashar</h1>
-        <p><strong>B.Tech Student | Computer Science Engineering (CSE)</strong></p>
-        <p>Passionate about Coding, Technology, Editing & Graphics.</p>
-    </section>
+<header>
 
-    <!-- About -->
-    <section>
-        <h2>🎓 About Me</h2>
+<nav class="navbar">
 
-        <p>🏫 Studying B.Tech in Computer Science Engineering in India.</p>
-        <p>🎯 Interested in Programming, Graphic Design & Creative Editing.</p>
-        <p>💼 Currently learning Data Structures & Algorithms DSA in C++ and improving my design skills.</p>
-        <p>🚀 Passionate about Technology, Coding, Editing and Graphic Design.</p>
-        <p>🌍 Based in India.</p>
-    </section>
+<div class="logo">
+Gouri<span>.</span>
+</div>
 
-    <!-- Learning -->
-    <section>
-        <h2>🌱 Currently Learning</h2>
+<ul class="nav-links">
 
-        <div class="skills">
-            <div class="skill">DSA</div>
-            <div class="skill">Graphic Design</div>
-            <div class="skill">Creative Editing</div>
-        </div>
-    </section>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact">Contact</a></li>
 
-    <!-- Skills -->
-    <section>
+</ul>
 
-        <h2>💻 Tech Skills</h2>
+<div class="nav-right">
 
-        <h3>Languages</h3>
+<button id="theme-toggle">
+<i class="fa-solid fa-moon"></i>
+</button>
 
-        <div class="skills">
-            <div class="skill">C++</div>
-            <div class="skill">C</div>
-            <div class="skill">Python (Basic)</div>
-        </div>
-
-        <br>
-
-        <h3>Frontend Development</h3>
-
-        <div class="skills">
-            <div class="skill">HTML5</div>
-            <div class="skill">CSS3</div>
-            <div class="skill">JavaScript (Basic)</div>
-        </div>
-
-        <br>
-
-        <h3>Design & Editing</h3>
-
-        <div class="skills">
-            <div class="skill">Problem Solving</div>
-            <div class="skill">Photo Editing</div>
-            <div class="skill">Creative Content Design</div>
-        </div>
-
-        <br>
-
-        <h3>Developer Tools</h3>
-
-        <div class="skills">
-            <div class="skill">Git</div>
-            <div class="skill">GitHub</div>
-            <div class="skill">VS Code</div>
-            <div class="skill">Canva</div>
-            <div class="skill">Adobe Tools (Basic)</div>
-        </div>
-
-    </section>
-
-    <!-- Contact -->
-    <section>
-
-        <h2>📫 Get In Touch</h2>
-
-        <table>
-
-            <tr>
-                <th>Platform</th>
-                <th>Link</th>
-            </tr>
-
-            <tr>
-                <td>Email</td>
-                <td>
-                    <a href="mailto:gouriparashar07@gmail.com">
-                        gouriparashar07@gmail.com
-                    </a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Portfolio</td>
-                <td>
-                    <a href="https://gouri313.vercel.app" target="_blank">
-                        gouri313.vercel.app
-                    </a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>GitHub</td>
-                <td>
-                    <a href="https://github.com/Gouri313" target="_blank">
-                        github.com/Gouri313
-                    </a>
-                </td>
-            </tr>
-
-        </table>
-
-        <br>
-
-        <h3>🌐 Connect With Me</h3>
-
-        <ul>
-            <li>LinkedIn</li>
-            <li>Instagram</li>
-            <li>GitHub</li>
-        </ul>
-
-    </section>
-
-    <!-- Projects -->
-    <section>
-
-        <h2>🎯 Featured Projects</h2>
-
-        <table>
-
-            <tr>
-                <th>Project</th>
-                <th>Description</th>
-                <th>Tech Stack</th>
-            </tr>
-
-            <tr>
-                <td>Portfolio Website</td>
-                <td>Basic Personal Portfolio Website</td>
-                <td>HTML, CSS, JavaScript, VS Code</td>
-            </tr>
-
-            <tr>
-                <td>Creative Poster Designs</td>
-                <td>Collection of Graphic Design and Editing Projects</td>
-                <td>Canva, Adobe Tools</td>
-            </tr>
-
-        </table>
-
-        <br>
-
-        <p>
-            ➡️
-            <a href="https://github.com/Gouri313" target="_blank">
-                View all projects on my GitHub profile
-            </a>
-        </p>
-
-    </section>
-
-    <!-- Achievements -->
-    <section>
-
-        <h2>🏆 Achievements & Highlights</h2>
-
-        <ul>
-            <li>🎖️ B.Tech CSE Student exploring Programming and Design.</li>
-            <li>🎖️ Passionate about Editing, Graphics and Creative Content.</li>
-            <li>📜 Certifications: To be added soon.</li>
-        </ul>
-
-    </section>
-
-    <!-- Fun Facts -->
-    <section>
-
-        <h2>⚡ Fun Facts About Me</h2>
-
-        <ul>
-            <li>🎨 I enjoy Graphic Design, Photo and Video Editing.</li>
-            <li>🎓 I love mixing Technology with Creativity.</li>
-            <li>🎵 Currently vibing to Lo-fi music while editing.</li>
-            <li>☕ Tea lover who starts every creative session with a cup of tea.</li>
-        </ul>
-
-    </section>
+<div class="menu-btn">
+<i class="fa-solid fa-bars"></i>
+</div>
 
 </div>
 
-<footer>
-    <h3>📈 Always Learning, Always Growing! 🚀</h3>
-    <p>⭐ If you like my projects, don't forget to star them on GitHub! ⭐</p>
-</footer>
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+<div class="hero-left" data-aos="fade-right">
+
+<h3>Hello, I'm</h3>
+
+<h1>Gouri Parashar</h1>
+
+<h2>
+<span id="typing"></span>
+</h2>
+
+<p>
+
+Computer Science Engineering student passionate about
+Artificial Intelligence, DSA in C++, Graphic Design
+and Creative Editing.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+
+<a href="#contact" class="btn btn-outline">
+Contact Me
+</a>
+
+</div>
+
+<div class="social-icons">
+
+<a href="https://github.com/Gouri313">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://gouri313.vercel.app">
+<i class="fa-solid fa-globe"></i>
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-right" data-aos="fade-left">
+
+<img src="profile.png" alt="Profile">
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="section-title">
+<h2>About Me</h2>
+</div>
+
+<div class="about-container">
+
+<div class="about-text">
+
+<p>
+
+I'm currently pursuing B.Tech in Computer Science Engineering.
+
+I enjoy solving problems using C++, building websites,
+designing creative graphics and exploring Artificial Intelligence.
+
+I'm continuously improving my programming and design skills.
+
+</p>
+
+<div class="info-grid">
+
+<div>
+<h4>Name</h4>
+<p>Gouri Parashar</p>
+</div>
+
+<div>
+<h4>Degree</h4>
+<p>B.Tech CSE</p>
+</div>
+
+<div>
+<h4>Country</h4>
+<p>India</p>
+</div>
+
+<div>
+<h4>Email</h4>
+<p>gouriparashar07@gmail.com</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+<div class="section-title">
+<h2>Skills</h2>
+</div>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+
+<h3>C++</h3>
+
+<div class="progress">
+<div class="progress-bar cpp"></div>
+</div>
+
+</div>
+
+<div class="skill-card">
+
+<h3>C</h3>
+
+<div class="progress">
+<div class="progress-bar c"></div>
+</div>
+
+</div>
+
+<div class="skill-card">
+
+<h3>Python</h3>
+
+<div class="progress">
+<div class="progress-bar python"></div>
+</div>
+
+</div>
+
+<div class="skill-card">
+
+<h3>HTML</h3>
+
+<div class="progress">
+<div class="progress-bar html"></div>
+</div>
+
+</div>
+
+<div class="skill-card">
+
+<h3>CSS</h3>
+
+<div class="progress">
+<div class="progress-bar css"></div>
+</div>
+
+</div>
+
+<div class="skill-card">
+
+<h3>JavaScript</h3>
+
+<div class="progress">
+<div class="progress-bar js"></div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- More sections continue... -->
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
