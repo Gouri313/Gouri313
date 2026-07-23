@@ -1,58 +1,330 @@
-<section id="projects">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gouri Parashar | Portfolio</title>
 
-    <h2>🎯 Featured Projects</h2>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    <table>
+        body{
+            background:#0f172a;
+            color:#f8fafc;
+            line-height:1.7;
+        }
 
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-            <th>Tech Stack</th>
-            <th>Live Demo</th>
-        </tr>
+        .container{
+            width:90%;
+            max-width:1100px;
+            margin:auto;
+            padding:40px 0;
+        }
 
-        <tr>
-            <td>🌐 Portfolio Website</td>
+        section{
+            background:#1e293b;
+            margin:25px 0;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 5px 20px rgba(0,0,0,.3);
+        }
 
-            <td>
-                A modern, responsive personal portfolio showcasing my
-                skills, projects, achievements, and contact information.
-            </td>
+        h1{
+            font-size:42px;
+            color:#38bdf8;
+        }
 
-            <td>
-                HTML • CSS • JavaScript • Vercel
-            </td>
+        h2{
+            color:#60a5fa;
+            margin-bottom:15px;
+            border-bottom:2px solid #38bdf8;
+            display:inline-block;
+            padding-bottom:5px;
+        }
 
-            <td>
-                <a href="https://gouri313.vercel.app" target="_blank">
-                    Visit Website ↗
-                </a>
-            </td>
-        </tr>
+        p{
+            margin:8px 0;
+        }
 
-        <tr>
-            <td>🎨 Creative Poster Designs</td>
+        ul{
+            padding-left:25px;
+        }
 
-            <td>
-                Collection of graphic design and creative editing projects.
-            </td>
+        li{
+            margin:8px 0;
+        }
 
-            <td>
-                Canva • Adobe Tools
-            </td>
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:15px;
+        }
 
-            <td>—</td>
-        </tr>
+        table,th,td{
+            border:1px solid #334155;
+        }
 
-    </table>
+        th{
+            background:#2563eb;
+            color:white;
+            padding:12px;
+        }
 
-    <br>
+        td{
+            padding:12px;
+            background:#0f172a;
+        }
 
-    <p>
-        ➡️
-        <a href="https://github.com/Gouri313" target="_blank">
-            View all projects on GitHub
-        </a>
-    </p>
+        a{
+            color:#38bdf8;
+            text-decoration:none;
+        }
 
-</section>
+        a:hover{
+            text-decoration:underline;
+        }
+
+        .skills{
+            display:flex;
+            flex-wrap:wrap;
+            gap:10px;
+            margin-top:15px;
+        }
+
+        .skill{
+            background:#2563eb;
+            padding:10px 18px;
+            border-radius:30px;
+        }
+
+        footer{
+            text-align:center;
+            padding:30px;
+            color:#94a3b8;
+        }
+
+        @media(max-width:768px){
+            h1{
+                font-size:32px;
+            }
+
+            table{
+                display:block;
+                overflow-x:auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <section>
+        <h1>👋 Hey! I'm Gouri Parashar</h1>
+        <p><strong>B.Tech Student | Computer Science Engineering (CSE)</strong></p>
+        <p>Passionate about Coding, Technology, Editing & Graphics.</p>
+    </section>
+
+    <!-- About -->
+    <section>
+        <h2>🎓 About Me</h2>
+
+        <p>🏫 Studying B.Tech in Computer Science Engineering in India.</p>
+        <p>🎯 Interested in Programming, Graphic Design & Creative Editing.</p>
+        <p>💼 Currently learning Data Structures & Algorithms (DSA) in C++ and improving my design skills.</p>
+        <p>🚀 Passionate about Technology, Coding, Editing and Graphic Design.</p>
+        <p>🌍 Based in India.</p>
+    </section>
+
+    <!-- Learning -->
+    <section>
+        <h2>🌱 Currently Learning</h2>
+
+        <div class="skills">
+            <div class="skill">Web Development</div>
+            <div class="skill">Graphic Design</div>
+            <div class="skill">Creative Editing</div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+
+        <h2>💻 Tech Skills</h2>
+
+        <h3>Languages</h3>
+
+        <div class="skills">
+            <div class="skill">C++</div>
+            <div class="skill">C</div>
+            <div class="skill">Python (Basic)</div>
+        </div>
+
+        <br>
+
+        <h3>Frontend Development</h3>
+
+        <div class="skills">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">JavaScript (Basic)</div>
+        </div>
+
+        <br>
+
+        <h3>Design & Editing</h3>
+
+        <div class="skills">
+            <div class="skill">Problem Solving</div>
+            <div class="skill">Photo Editing</div>
+            <div class="skill">Creative Content Design</div>
+        </div>
+
+        <br>
+
+        <h3>Developer Tools</h3>
+
+        <div class="skills">
+            <div class="skill">Git</div>
+            <div class="skill">GitHub</div>
+            <div class="skill">VS Code</div>
+            <div class="skill">Canva</div>
+            <div class="skill">Adobe Tools (Basic)</div>
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section>
+
+        <h2>📫 Get In Touch</h2>
+
+        <table>
+
+            <tr>
+                <th>Platform</th>
+                <th>Link</th>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td>
+                    <a href="mailto:gouriparashar07@gmail.com">
+                        gouriparashar07@gmail.com
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Portfolio</td>
+                <td>
+                    <a href="https://gouri313.vercel.app" target="_blank">
+                        gouri313.vercel.app
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>GitHub</td>
+                <td>
+                    <a href="https://github.com/Gouri313" target="_blank">
+                        github.com/Gouri313
+                    </a>
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <h3>🌐 Connect With Me</h3>
+
+        <ul>
+            <li>LinkedIn</li>
+            <li>Instagram</li>
+            <li>GitHub</li>
+        </ul>
+
+    </section>
+
+    <!-- Projects -->
+    <section>
+
+        <h2>🎯 Featured Projects</h2>
+
+        <table>
+
+            <tr>
+                <th>Project</th>
+                <th>Description</th>
+                <th>Tech Stack</th>
+            </tr>
+
+            <tr>
+                <td>Portfolio Website</td>
+                <td>Basic Personal Portfolio Website</td>
+                <td>HTML, CSS, JavaScript, VS Code</td>
+            </tr>
+
+            <tr>
+                <td>Creative Poster Designs</td>
+                <td>Collection of Graphic Design and Editing Projects</td>
+                <td>Canva, Adobe Tools</td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <p>
+            ➡️
+            <a href="https://github.com/Gouri313" target="_blank">
+                View all projects on my GitHub profile
+            </a>
+        </p>
+
+    </section>
+
+    <!-- Achievements -->
+    <section>
+
+        <h2>🏆 Achievements & Highlights</h2>
+
+        <ul>
+            <li>🎖️ B.Tech CSE Student exploring Programming and Design.</li>
+            <li>🎖️ Passionate about Editing, Graphics and Creative Content.</li>
+            <li>📜 Certifications: To be added soon.</li>
+        </ul>
+
+    </section>
+
+    <!-- Fun Facts -->
+    <section>
+
+        <h2>⚡ Fun Facts About Me</h2>
+
+        <ul>
+            <li>🎨 I enjoy Graphic Design, Photo and Video Editing.</li>
+            <li>🎓 I love mixing Technology with Creativity.</li>
+            <li>🎵 Currently vibing to Lo-fi music while editing.</li>
+            <li>☕ Tea lover who starts every creative session with a cup of tea.</li>
+        </ul>
+
+    </section>
+
+</div>
+
+<footer>
+    <h3>📈 Always Learning, Always Growing! 🚀</h3>
+    <p>⭐ If you like my projects, don't forget to star them on GitHub! ⭐</p>
+</footer>
+
+</body>
+</html>
