@@ -5,8 +5,6 @@
 const texts = [
   "Aspiring Software Developer",
   "Frontend Developer",
-  "Java Programmer",
-  "UI/UX Designer",
   "DSA Learner"
 ];
 
