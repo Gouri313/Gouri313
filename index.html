@@ -1,261 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Gouri Parashar | Portfolio</title>
+<title>Gouri Parashar | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-<!-- Navbar -->
+<div id="progress-bar"></div>
+
+<header>
+
 <nav>
-    <h2>Gouri ✨</h2>
 
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<div class="logo">
+Gouri<span>.</span>
+</div>
 
-    <button id="themeBtn">🌙</button>
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#education">Education</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="theme">
+<i class="fa-solid fa-moon"></i>
+</div>
+
 </nav>
 
+</header>
 
-<!-- Hero -->
 <section id="home" class="hero">
 
-    <div class="hero-text">
+<div class="hero-text" data-aos="fade-right">
 
-        <h1>
-            Hey! I'm <span>Gouri Parashar</span> 👋
-        </h1>
+<h3>Hello 👋</h3>
 
-        <h3>
-            B.Tech CSE Student | Developer | Creative Designer
-        </h3>
+<h1>I'm <span>Gouri Parashar</span></h1>
 
-        <p>
-            Passionate about technology, programming,
-            graphic design and creative editing.
-        </p>
+<h2><span id="typing"></span></h2>
 
+<p>
 
-        <div class="buttons">
+Passionate Computer Science student interested in Web Development, Java, DSA and UI/UX Design.
 
-            <a href="#contact" class="btn">
-                Contact Me
-            </a>
+</p>
 
-            <a href="resume.pdf" class="btn outline">
-                Download Resume
-            </a>
+<div class="buttons">
 
-        </div>
+<a href="#contact" class="btn">
+Hire Me
+</a>
 
-    </div>
+<a href="resume.pdf" class="btn2" download>
+Download Resume
+</a>
 
+</div>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="#"><i class="fas fa-envelope"></i></a>
+
+<a href="#"><i class="fas fa-code"></i></a>
+
+</div>
+
+</div>
+
+<div class="hero-image" data-aos="zoom-in">
+
+<img src="images/profile.jpg">
+
+</div>
 
 </section>
 
-
-
-<!-- About -->
-
 <section id="about">
 
-<h2>🎓 About Me</h2>
+<h2>About Me</h2>
 
 <p>
-I am a Computer Science Engineering student from India.
-I enjoy exploring programming, web development,
-graphic design and creative editing.
 
-Currently learning Java, improving problem solving
-skills and building projects to enhance my technical knowledge.
+I am a B.Tech Computer Science student at ABES Engineering College. I enjoy building responsive websites, solving DSA problems and exploring Artificial Intelligence. My goal is to become a skilled Software Engineer and continuously improve my development skills.
+
 </p>
 
 </section>
 
+<section class="stats">
 
+<div class="card">
 
+<h2>15+</h2>
 
-<!-- Skills -->
-
-<section id="skills">
-
-<h2>💻 Skills</h2>
-
-
-<div class="skill">
-
-<p>C / C++</p>
-<div class="bar">
-<span style="width:85%"></span>
-</div>
+<p>Projects</p>
 
 </div>
 
+<div class="card">
 
+<h2>300+</h2>
 
-<div class="skill">
-
-<p>Python</p>
-<div class="bar">
-<span style="width:75%"></span>
-</div>
+<p>DSA Problems</p>
 
 </div>
 
+<div class="card">
 
+<h2>10+</h2>
 
-
-<div class="skill">
-
-<p>HTML CSS JavaScript</p>
-<div class="bar">
-<span style="width:80%"></span>
-</div>
+<p>Technologies</p>
 
 </div>
 
+<div class="card">
 
+<h2>2+</h2>
 
-
-<div class="skill">
-
-<p>Graphic Design & Editing</p>
-<div class="bar">
-<span style="width:90%"></span>
-</div>
+<p>Years Learning</p>
 
 </div>
-
 
 </section>
 
+<section id="skills">
 
+<h2>Skills</h2>
 
+<div class="skill">
 
+<p>HTML</p>
 
-<!-- Projects -->
+<div class="bar">
+<div class="fill html"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>CSS</p>
+
+<div class="bar">
+<div class="fill css"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>JavaScript</p>
+
+<div class="bar">
+<div class="fill js"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>Java</p>
+
+<div class="bar">
+<div class="fill java"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>C/C++</p>
+
+<div class="bar">
+<div class="fill cpp"></div>
+</div>
+
+</div>
+
+</section>
 
 <section id="projects">
 
-<h2>🚀 Projects</h2>
+<h2>Projects</h2>
 
+<div class="project-container">
 
-<div class="cards">
+<div class="project-card">
 
-
-<div class="card">
+<img src="images/project1.png">
 
 <h3>Portfolio Website</h3>
 
 <p>
-Personal responsive portfolio website
-built using HTML, CSS and JavaScript.
+
+Responsive portfolio developed using HTML CSS JavaScript.
+
 </p>
+
+<div class="project-btn">
+
+<a href="#">Live</a>
+
+<a href="#">GitHub</a>
 
 </div>
 
+</div>
 
+<div class="project-card">
 
-<div class="card">
+<img src="images/project2.png">
 
-<h3>Creative Poster Designs</h3>
+<h3>AI Image Caption Generator</h3>
 
 <p>
-Collection of creative graphics,
-social media designs and editing work.
+
+Deep Learning project for automatic image caption generation.
+
 </p>
+
+<div class="project-btn">
+
+<a href="#">Live</a>
+
+<a href="#">GitHub</a>
 
 </div>
 
+</div>
 
+<div class="project-card">
 
+<img src="images/project3.png">
 
-<div class="card">
-
-<h3>AI Projects</h3>
+<h3>Creative Posters</h3>
 
 <p>
-Exploring Artificial Intelligence and
-Machine Learning based applications.
+
+Collection of Graphic Designing and Creative Editing works.
+
 </p>
+
+<div class="project-btn">
+
+<a href="#">View</a>
 
 </div>
 
-
+</div>
 
 </div>
 
 </section>
 
+<section id="education">
 
+<h2>Education</h2>
 
+<div class="edu-card">
 
+<h3>B.Tech CSE</h3>
 
-<!-- Contact -->
+<p>ABES Engineering College</p>
+
+<p>2025 - 2029</p>
+
+</div>
+
+</section>
 
 <section id="contact">
 
-<h2>📫 Get In Touch</h2>
+<h2>Contact Me</h2>
 
+<form>
 
-<p>
-Email:
-<a href="mailto:gouriparashar07@gmail.com">
-gouriparashar07@gmail.com
-</a>
-</p>
+<input type="text" placeholder="Your Name">
 
+<input type="email" placeholder="Your Email">
 
-<p>
-GitHub:
-<a href="https://github.com/Gouri313">
-github.com/Gouri313
-</a>
-</p>
+<textarea rows="6" placeholder="Your Message"></textarea>
 
+<button>
 
-<p>
-Portfolio:
-<a href="https://gouri313.vercel.app">
-gouri313.vercel.app
-</a>
-</p>
+Send Message
 
+</button>
+
+</form>
 
 </section>
-
-
-
 
 <footer>
 
 <p>
-© 2026 Gouri Parashar | Always Learning 🚀
+
+© 2026 Gouri Parashar | Designed with ❤️
+
 </p>
 
 </footer>
 
-
-
 <button id="topBtn">
+
 ↑
+
 </button>
 
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
+<script>
+
+AOS.init();
+
+</script>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
