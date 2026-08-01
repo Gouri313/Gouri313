@@ -1,111 +1,238 @@
-// Dark / Light Mode
+// ==========================
+// Typing Animation
+// ==========================
 
-const themeBtn = document.getElementById("themeBtn");
+const texts = [
+  "Aspiring Software Developer",
+  "Frontend Developer",
+  "Java Programmer",
+  "UI/UX Designer",
+  "DSA Learner"
+];
 
-themeBtn.addEventListener("click", () => {
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
 
-    document.body.classList.toggle("dark");
+(function type(){
 
+    if(count === texts.length){
+        count = 0;
+    }
 
-    if(document.body.classList.contains("dark")){
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
 
-        themeBtn.innerHTML = "☀️";
+    document.getElementById("typing").textContent = letter;
+
+    if(letter.length === currentText.length){
+
+        count++;
+        index = 0;
+
+        setTimeout(type,1500);
 
     }
     else{
 
-        themeBtn.innerHTML = "🌙";
+        setTimeout(type,100);
 
     }
 
-});
+})();
 
 
-
-
-
-// Back To Top Button
-
-const topBtn = document.getElementById("topBtn");
-
+// ==========================
+// Scroll Progress Bar
+// ==========================
 
 window.addEventListener("scroll",()=>{
 
+let scrollTop=document.documentElement.scrollTop;
 
-    if(window.scrollY > 300){
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
 
-        topBtn.style.display="block";
+let progress=(scrollTop/height)*100;
 
-    }
-
-    else{
-
-        topBtn.style.display="none";
-
-    }
-
+document.getElementById("progress-bar").style.width=progress+"%";
 
 });
 
 
+// ==========================
+// Scroll To Top Button
+// ==========================
 
-topBtn.addEventListener("click",()=>{
+const topBtn=document.getElementById("topBtn");
 
-    window.scrollTo({
+window.onscroll=function(){
 
-        top:0,
+if(document.documentElement.scrollTop>300){
 
-        behavior:"smooth"
+topBtn.style.display="block";
 
-    });
+}
+else{
+
+topBtn.style.display="none";
+
+}
+
+}
+
+topBtn.onclick=function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+
+// ==========================
+// Dark Mode
+// ==========================
+
+const theme=document.querySelector(".theme");
+
+let dark=false;
+
+theme.onclick=function(){
+
+dark=!dark;
+
+if(dark){
+
+document.body.style.background="#111";
+document.body.style.color="white";
+
+document.querySelectorAll(".card,.project-card,.edu-card").forEach(card=>{
+
+card.style.background="#1f1f1f";
+card.style.color="white";
+
+});
+
+theme.innerHTML='<i class="fa-solid fa-sun"></i>';
+
+}
+
+else{
+
+document.body.style.background="linear-gradient(135deg,#eef5ff,#ffffff)";
+document.body.style.color="#222";
+
+document.querySelectorAll(".card,.project-card,.edu-card").forEach(card=>{
+
+card.style.background="white";
+card.style.color="#222";
+
+});
+
+theme.innerHTML='<i class="fa-solid fa-moon"></i>';
+
+}
+
+}
+
+
+// ==========================
+// Reveal Animation
+// ==========================
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll("section").forEach(sec=>{
+
+observer.observe(sec);
 
 });
 
 
+// ==========================
+// Active Navbar
+// ==========================
 
+const sections=document.querySelectorAll("section");
+const navLinks=document.querySelectorAll("nav ul li a");
 
+window.addEventListener("scroll",()=>{
 
-// Scroll Animation
-
-const sections = document.querySelectorAll("section");
-
-
-const observer = new IntersectionObserver((entries)=>{
-
-
-    entries.forEach(entry=>{
-
-
-        if(entry.isIntersecting){
-
-
-            entry.target.style.opacity="1";
-
-            entry.target.style.transform="translateY(0)";
-
-
-        }
-
-
-    });
-
-
-
-});
-
-
+let current="";
 
 sections.forEach(section=>{
 
+const sectionTop=section.offsetTop-120;
 
-    section.style.opacity="0";
+if(pageYOffset>=sectionTop){
 
-    section.style.transform="translateY(40px)";
+current=section.getAttribute("id");
 
-    section.style.transition="0.8s ease";
-
-
-    observer.observe(section);
-
+}
 
 });
+
+navLinks.forEach(link=>{
+
+link.classList.remove("active");
+
+if(link.getAttribute("href")==="#"+current){
+
+link.classList.add("active");
+
+}
+
+});
+
+});
+
+
+// ==========================
+// Skill Bar Animation
+// ==========================
+
+const fills=document.querySelectorAll(".fill");
+
+const skillObserver=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.animation="grow 2s forwards";
+
+}
+
+});
+
+});
+
+fills.forEach(fill=>{
+
+skillObserver.observe(fill);
+
+});
+
+
+// ==========================
+// Console Message
+// ==========================
+
+console.log("Welcome to Gouri's Portfolio 🚀");
